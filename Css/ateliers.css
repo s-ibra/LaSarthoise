@@ -1,0 +1,333 @@
+body,html,header{ /*tt la page sera flexible*/
+	margin:0px;
+	padding:0px;
+	display: flex;
+}
+
+body{   /*initialier la police et taille du texte*/
+	font-family: 'Nunito';
+	max-width: 1280px 
+}
+
+header,body,html{   /*prenant 100% de la hauteur et largeur du viewport(fenetre)*/
+	width:100%;
+	height: 100%;
+}
+
+header{ /* image de header et couleur du texte */
+	background: url("../ateliers/img/atelier.png") no-repeat center center;
+	background-size: cover;	
+    color: white;
+}
+
+.wrapper{ /*un bloc pour l'image et la paragraphe*/
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.content{ /*la premierer paragraphe*/
+	display: table-cell;
+    text-align: center;
+	vertical-align: middle;
+	font-size: 29px;
+	text-shadow: 1px 1px 10px black;
+}
+
+.main{ /*main dans le body*/
+
+	max-height: 700px;
+	margin: auto;
+}
+
+h1{ /*les titres de chaque paragraphe */
+    text-align: center;
+    font-size: 40px;
+    color: rgba(246,131,87);
+    text-shadow: -1px 0 3px #808080; /*reflet gris*/
+}
+
+/*pour le bloc apres le header*/
+/*Ateliers cuisine*/
+.texte1{
+	position: absolute;
+	top: 150%;
+	left: 50%;
+	transform: translate(-50%,-150px); /*transform modifie l'espace de coordonnées */
+	width: 900px;
+	padding:30px;
+	background:#fff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0px 15px 50px rgba(0,0,0,.2);
+
+}
+
+.circle1{
+	width: 400px;
+	height: 400px;
+	background: url("../ateliers/img/Cuisine2.png");
+	background-size: 100% 100%;
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin: 30px;
+    text-align: center;
+}
+
+/*Ateliers creatifs*/
+.texte2{
+	shape-outside: circle(); 
+
+}
+
+.circle2{
+	width: 400px;
+	height: 400px;
+	background: url("../ateliers/img/Creatifs.png");
+	background-size: 100% 100%;
+	border-radius: 50%;
+	float: right;
+	shape-outside: circle();
+	margin: 30px;
+}
+
+/*Ateliers famille*/
+.texte3{
+	shape-outside: circle();
+	
+}
+
+.circle3{
+	width: 400px;
+	height: 400px;
+	background: url("../ateliers/img/Digital.png");
+	background-size: 100% 100%;
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin: 30px;
+}
+
+/*Ateliers esthétique*/
+.texte4{
+	shape-outside: circle();
+	
+}
+
+.circle4{
+	width: 400px;
+	height: 400px;
+	background: url("../ateliers/img/esthe.png");
+	background-size: 100% 100%;
+	border-radius: 50%;
+	float: right;
+	shape-outside: circle();
+	margin: 30px;
+}
+
+/*box de sortie culturelles */
+.boxs{
+	box-orient : horizontal;
+	display: block;
+}
+
+/*premier box*/
+.box1{
+    position:relative;
+    width:400px;
+    height:400px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:0.5s;
+ }
+  
+.box1:hover{
+  	background-size:110%;
+ }
+
+.box1:after{
+    position:absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:rgba(246,131,87,0.9);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+  
+ .box1:hover:after{
+    top:0;
+    padding:8px;
+    background-color:rgba(246,131,87,0.7);
+  }
+  
+ .box1:first-line{
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+  }
+
+/*troisieme box*/
+.box2{
+    position:relative;
+    width:400px;
+    height:400px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:0.5s;
+ }
+  
+.box2:hover{
+  	background-size:110%;
+ }
+  
+.box2:after{
+    position:absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:rgba(246,131,87,0.9);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+  
+ .box2:hover:after{
+    top:0;
+    padding:8px;
+    background-color:rgba(246,131,87,0.7);
+  }
+  
+ .box2:first-line{
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+  }
+
+/*troisieme box*/
+.box3{
+    position:relative;
+    width:400px;
+    height:400px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:0.5s;
+ }
+  
+.box3:hover{
+  	background-size:110%;
+ }
+  
+.box3:after{
+    position:absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:rgba(246,131,87,0.9);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+  
+ .box3:hover:after{
+    top:0;
+    padding:8px;
+    background-color:rgba(246,131,87,0.7);
+  }
+  
+ .box3:first-line{
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+  }
+/*quatrieme box*/
+.box4{
+    position:relative;
+    width:400px;
+    height:400px;
+    float:left;
+    margin:4px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:0.5s;
+ }
+  
+.box4:hover{
+  	background-size:110%;
+ }
+  
+.box4:after{
+    position:absolute;
+    top:90%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:rgba(246,131,87,0.9);
+    color:#fff;
+    padding:0 8px;
+    content:attr(data-text);
+    transition:0.5s;
+  }
+  
+ .box4:hover:after{
+    top:0;
+    padding:8px;
+    background-color:rgba(246,131,87,0.7);
+  }
+  
+ .box4:first-line{
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+  }
+/*calendrier*/ 
+.calendrier{
+	display:block;
+    text-align: center;
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
